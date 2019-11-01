@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact | Clare Accounting</title>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/2d0c359df6.js"></script>
+</head>
+<body>
+    <header id="main-header">
+        <div class="row center-xs center-sm middle-xs middle-sm middle-md middle-lg">
+            <div class="header-img col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <img src="./images/transparent_logo1.png" alt="Clare Accounting Group">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mt-2">
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li class="current"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="page" class="services">
+        <div class="container">
+            <div class="row center-xs center-sm center-md center-lg">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2><span class="primary-text">We</span> Would love to hear from you!</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="page" class="contact">
+        <div class="container">
+            <div class="row center-xs center-sm center-md center-lg">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="map"></div>
+                    <!-- <h2><span class="primary-text">Get</span> In Touch</h2>
+                    <p>Please use this form to contact us</p>
+                    <form>
+                        <div>
+                            <label for="name">Name</label><br>
+                            <input type="text" name="name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email">
+                        </div>
+                        <div>
+                            <label for="message">Message</label><br>
+                            <textarea name="message"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="company">
+        <div class="row center-xs center-sm center-md center-lg pb-3">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa fa-phone"></i> 208-863-0539</li>
+                    <li><i class="fa fa-envelope"></i> scott.clare@clareaccountinggroup.com</li>
+                    <li><i class="fa fa-map"></i><a target="_blank" href="https://www.google.com/maps/dir//7981+168th+Ave+NE+%23222,+Redmond,+WA+98052/@47.6746557,-122.1867028,12z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x549072b13f995d7b:0xc7be10a07b2a7e05!2m2!1d-122.1166624!2d47.674677!3e3"> 7981 168th Avenue NE Suite 222 Redmond, WA 98052</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h4>Our Mission</h4>
+                <p>Clare Accounting Group’s mission is to partner with self-employed and small business owners, to provide them with superior financial accounting solutions and to give them the freedom to concentrate more time, energy and effort on building their businesses.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h4>Get More Information</h4>
+                <p>If you want to hear more information, fill out your email here and one of our team members will be in touch with you directly.</p>
+                <form>
+                    <input type="text" name="email" placeholder="Enter Email">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row center-xs center-sm center-md center-lg">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 add-border">
+                <p>Copyright &copy; 2019 | Clare Accounting Group</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function initMap() {
+            var myLatLng = {lat: 47.674670, lng: -122.116840};
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 18,
+                center: myLatLng,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Clare Accounting Group',
+                animation: google.maps.Animation.DROP
+            });
+            var contentString = '<h1>Clare Accounting Group</h1>' + '<a target="_blank" href="https://www.google.com/maps/dir//7981+168th+Avenue+Northeast,+Redmond,+WA/@47.6746557,-122.1867028,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x549072b13f995d7b:0xdd3e10a5d6adbc64!2m2!1d-122.1166624!2d47.674677!3e0">7981 168th Avenue NE Suite 222 Redmond, WA 98052</a>'
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+        }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4HjeXhplfNZb1oPX3HlrQkFz2FuCzoAs&callback=initMap"></script>
+</body>
+</html>
