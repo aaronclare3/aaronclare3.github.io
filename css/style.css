@@ -10,9 +10,9 @@ img{
     width: 100%;
 }
 
-ul{
+/* ul {
     list-style: none;
-}
+} */
 
 .container{
     margin: auto;
@@ -56,11 +56,13 @@ ul{
     color: #888;
 }
 
-#navbar li.current:first-child a, #navbar a:hover{
+#navbar li.current a, #navbar a:hover{
     color: #062C87;
     border-bottom: 3px solid #062C87;
     padding-bottom: 3px;
 }
+
+
 
 #navbar ul li ul.dropdown {
     background: #f2f2f2;
@@ -122,8 +124,13 @@ ul{
     box-shadow: 0 0 11px rgba(33,33,33,.2);
     border-radius:10px;
     background: #fff; 
-    padding-top: 20px;
+    /* padding-top: 20px; */
     margin-bottom: 10px;
+}
+
+.border-top-radius {
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
 }
 
 .about-img {
@@ -268,6 +275,13 @@ ul{
     /* color: white; */
     background-color: #E8E8E8;
 }
+
+#page-contact h3{
+    background-color: #E8E8E8;
+    margin: 0;
+}
+
+
 .services hr {
     margin-top: -7px;
 }
