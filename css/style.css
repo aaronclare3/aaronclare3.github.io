@@ -152,8 +152,11 @@ img{
 .border-top-radius {
     border-top-left-radius: 10px; 
     border-top-right-radius: 10px;
-    max-height:400px; 
     object-fit: cover;
+    max-height: 400px;
+}
+
+.wrapper{
     width: 100%;
 }
 
