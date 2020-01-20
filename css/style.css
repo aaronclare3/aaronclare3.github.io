@@ -10,10 +10,6 @@ img{
     width: 100%;
 }
 
-/* ul {
-    list-style: none;
-} */
-
 .container{
     margin: auto;
 }
@@ -62,8 +58,6 @@ img{
     border-bottom: 3px solid #062C87;
     padding-bottom: 3px;
 }
-
-
 
 #navbar ul li ul.dropdown {
     background: #f2f2f2;
@@ -403,5 +397,14 @@ img{
         box-shadow: 0 0 11px rgba(33,33,33,.2); 
         margin-bottom: 5px;
     }
+    
+    
+}
 
+@media(max-width: 600px){
+    #navbar ul li ul.dropdown {
+        position: absolute;
+        right: 100px;
+        left: -200px;
+    }
 }
