@@ -1,35 +1,18 @@
-<?php
-if (isset ($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
+<?php 
+if(isset($_POST['submit'])){
+    $to = "aaronclare88@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
     $message = $_POST['message'];
-    $to = 'aaronclare88@gmail.com';
-    $subject = "New Subscriber";
-    $body = 
-        '<html>
-            <body>
-                <h2>Test</h2>
-                <hr>
-                <p>Name <br>'.$name.'</p>
-                <p>Email <br>'.$email.'</p>
-                <p>message <br>'.$message.'</p>
-            </body>
-        </html>';
-        $headers  = "From: ".$name." <".$email.">\r\n";
-        $headers .= "Reply-To: ".$email."\r\n";
-        $headers .= "MIME-Version: 1.0\r\n";
-        $headers .= "Content-type: text/html; charset-utf-8";
-        
-        //send
-        $send = mail($to, $subject, $body, $headers);
-        if ($send) {
-         echo '<br>';
-         echo "Success. Thanks for Your Message.";
-        } else {
-         echo 'Error.';
-        }
-        }
-        ?>
+    $name = $_POST['name'];
+    $subject = "Form submission";
+    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    mail($to,$subject,$message,$headers);
+    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+    header('Location: index.html');
+    }
+?>
 
 
 
