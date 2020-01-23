@@ -4,7 +4,7 @@ if (isset ($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])
     $email = $_POST['email'];
     $message = $_POST['message'];
     $to = 'aaronclare88@gmail.com';
-    $subject = "New Subsciber";
+    $subject = "New Subscriber";
     $body = 
         '<html>
             <body>
@@ -16,7 +16,7 @@ if (isset ($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])
             </body>
         </html>';
     $headers = "From: ".$name." <".$email.">\r\n";
-    $headers .= "Reply-to: ".$email."\r\n"; 
+    $headers .= "Reply-To: ".$email."\r\n"; 
     $headers .= "MIME-Version: 1.0\r\n"; 
     $headers .= "Content-type: text/html; charset-utf-8";
     
@@ -90,7 +90,7 @@ if (isset ($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])
                     <h4 class='mb-0'>Setup a Free Consultation</h4>
                 </div>
                 <div class="card-body">
-                    <form action="contact.php" class="form" method='post' role='form' autocomplete="off">
+                    <form action="" class="form" method='post' role='form' autocomplete="off">
                         <div class="form-group mb-4 row">
                             <div class="col-lg-12">
                                 <input type="text" name='name' class="form-control" placeholder='Name'>
