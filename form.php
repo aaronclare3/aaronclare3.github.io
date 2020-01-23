@@ -1,23 +1,39 @@
 <?php
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
-    $from = 'From: clareaccountinggroup.com';
-    $to = 'aaronclare88@gmail.com';
-    $subject = 'Customer Inquiry';
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
-    $header = "From: noreply@example.com\r\n";
-    $header.= "MIME-Version: 1.0\r\n";
-    $header.= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-    $header.= "X-Priority: 1\r\n";
+ $url = 'https://api.sendgrid.com/';
+ $user = 'Aaron Clare';
+ $pass = 'bsballking99';
 
-    $status = mail($to, $subject, $message, $header);
+ $params = array(
+      'api_user' => $user,
+      'api_key' => $pass,
+      'to' => 'aaronclare88@gmail.com',
+      'subject' => 'testing from curl',
+      'html' => 'testing body',
+      'text' => 'testing body',
+      'from' => 'some name here',
+   );
 
-    if($status)
-    {
-        echo '<p>Your mail has been sent!</p>';
-    } else {
-        echo '<p>Something went wrong. Please try again!</p>';
-    }
-?>
+ $request = $url.'api/mail.send.json';
+
+ // Generate curl request
+ $session = curl_init($request);
+
+ // Tell curl to use HTTP POST
+ curl_setopt ($session, CURLOPT_POST, true);
+
+ // Tell curl that this is the body of the POST
+ curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
+
+ // Tell curl not to return headers, but do return the response
+ curl_setopt($session, CURLOPT_HEADER, false);
+ curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+
+ // obtain response
+ $response = curl_exec($session);
+ curl_close($session);
+
+ // print everything out
+ print_r($response);
+
+ ?>
