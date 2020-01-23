@@ -1,3 +1,38 @@
+<?php
+if (isset ($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $to = 'aaronclare88@gmail.com';
+    $subject = "New Subsciber";
+    $body = 
+        '<html>
+            <body>
+                <h2>Test</h2>
+                <hr>
+                <p>Name <br>'.$name.'</p>
+                <p>Email <br>'.$email.'</p>
+                <p>message <br>'.$message.'</p>
+            </body>
+        </html>';
+    $headers = "From: ".$name." <".$email.">\r\n";
+    $headers .= "Reply-to: ".$email."\r\n"; 
+    $headers .= "MIME-Version: 1.0\r\n"; 
+    $headers .= "Content-type: text/html; charset-utf-8";
+    
+    $send = mail($to, $subject, $body, $headers);
+    if($send){
+        echo '<br>';
+        echo 'Thanks for contacting Clare Accounting Group. We will be reaching out to you shortly';
+    } else {
+        echo 'error';
+    }
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +71,7 @@
                                 <li><a href="individual_income_tax.html">Individual Income Taxation</a></li>
                             </ul>
                         </li>
-                        <li class="current"><a href="contact.html">Contact</a></li>
+                        <li class="current"><a href="contact.php">Contact</a></li>
                         <li><a href="client_portal.html">Client Portal</a></li>
                     </ul>
                 </nav>
@@ -55,7 +90,7 @@
                     <h4 class='mb-0'>Setup a Free Consultation</h4>
                 </div>
                 <div class="card-body">
-                    <form action="contact.html" class="form" method='post' role='form' autocomplete="off">
+                    <form action="contact.php" class="form" method='post' role='form' autocomplete="off">
                         <div class="form-group mb-4 row">
                             <div class="col-lg-12">
                                 <input type="text" name='name' class="form-control" placeholder='Name'>
@@ -76,7 +111,7 @@
                         
                         <div class="form-group row">
                             <div class="col-lg-12">
-                                <button type='reset' class='btn text-white'>Submit</button>
+                                <button type='submit' class='btn text-white'>Submit</button>
                             </div>
                         </div>
                     </form>
