@@ -86,7 +86,7 @@ img{
 
 .carousel-content{
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -96,7 +96,7 @@ img{
 }
 .carousel-content-1{
     position: absolute;
-    top: 45%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -402,6 +402,10 @@ img{
 }
 
 @media(max-width: 600px){
+    .hide{
+        visibility: hidden;
+    }
+
     #navbar ul li ul.dropdown {
         position: absolute;
         right: 100px;
