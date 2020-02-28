@@ -380,7 +380,7 @@ img{
         visibility: visible;
     }
     .hide-on-computer{
-        visibility: hidden;
+        display: none !important;
     }
 }
 
