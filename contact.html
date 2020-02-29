@@ -53,11 +53,12 @@
         <div class="col-sm-11 col-xs-11 col-md-8 col-lg-4">
             <div class="card">
                 <div class="card-header text-white">
-                    <h5 class='mb-1'>To Setup a Free Consultation email scott.clare@clareaccountinggroup.com</h4>
+                    <h4 class='mb-1 phone-smaller-text'>Let's Connect!</h4>
                 </div>
 
-                <!-- <div class="card-body">
-                    <form action="" class="form" method='post' role='form' autocomplete="off">
+
+                <div class="card-body">
+                    <form action="https://script.google.com/macros/s/AKfycbxGXQZvFtGUKwsm_NDn9Wdoc0NZzRVZWTnKyArrC6HmmPPKWt8/exec" class="form gform" method='POST' autocomplete="off">
                         <div class="form-group mb-4 row">
                             <div class="col-lg-12">
                                 <input type="text" name='name' class="form-control" placeholder='Name'>
@@ -81,8 +82,15 @@
                                 <button type='submit' class='btn text-white'>Submit</button>
                             </div>
                         </div>
+                        <div style="display:none" class="thankyou_message">
+                            <!-- You can customize the thankyou message by editing the code below -->
+                            <h2><em>Thanks</em> for contacting Clare Accounting Group! We will reach out to you soon!
+                            </h2>
+                        </div>
                     </form>
-                </div> -->
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -155,6 +163,8 @@
         }
 
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4HjeXhplfNZb1oPX3HlrQkFz2FuCzoAs&callback=initMap"></script>
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4HjeXhplfNZb1oPX3HlrQkFz2FuCzoAs&callback=initMap">
+    </script>
 </body>
 </html>
