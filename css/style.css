@@ -6,6 +6,13 @@ body{
     padding: 0px;
 }
 
+html,body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 img{
     width: 100%;
 }
@@ -239,6 +246,13 @@ img{
     color: white;
     padding: 20px 20px 0px 20px;
     margin: 0px 0px;
+
+}
+
+.client-portal{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 #company h4{
@@ -399,7 +413,7 @@ img{
         padding: 40px 10px;
     }
 
-    .carousel-content {
+    .carousel-content-1 {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -422,6 +436,10 @@ img{
         visibility: visible;
         margin-bottom: 5px;
     }
+    .phone-smaller-text{
+        font-size: large;
+    }
+    
 }
 
 @media(max-width: 600px){
