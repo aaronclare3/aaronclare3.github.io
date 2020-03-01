@@ -15,14 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </head>
-<script>
-    $(document).ready(function(){
-        $('li a').click(function(e) {
-            e.preventDefault();
-            $(this).closest("li").find("[class^='ul_submenu']").slideToggle();
-          });
-    })
-</script>
+
 
 
 
@@ -44,7 +37,7 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">Our Team</a></li>
-                            <li class="submenu"><a href="#">Services</a>
+                            <li class="submenu"><a class="submenu-a" href="">Services</a>
                                 <ul class="ul_submenu" style="display: block; padding-left: 120px;">
                                     <li><a href="accounting_bookkeeping.html">Accounting & Bookkeeping</a></li>
                                     <li><a href="business_taxation.html">Business Income Taxation</a></li>
@@ -72,7 +65,6 @@
             <!-- COMPUTER MENU -->
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mt-2 hide-on-phone">
                 <nav id="navbar">
-
                     <ul class="firstlist">
                         <li class="current"><a href="index.html">Home</a></li>
                         <li><a href="about.html">Our Team</a></li>
@@ -214,6 +206,15 @@
             </div>
         </div>
     </section>
+
+    <script>
+        $(document).ready(function(){
+            $('ul a.submenu-a').click(function(e) {
+                e.preventDefault();
+                $(this).closest("li").find("[class^='ul_submenu']").slideToggle();
+              });
+        })
+    </script>
 
 </body>
 </html>
