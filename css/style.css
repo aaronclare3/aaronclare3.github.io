@@ -53,6 +53,7 @@ img{
     padding-right: 20px;
     list-style: none; 
     position: relative;
+    vertical-align: bottom;
 }
 
 #navbar a{
@@ -64,6 +65,7 @@ img{
     color: #062C87;
     border-bottom: 3px solid #062C87;
     padding-bottom: 3px;
+
 }
 
 #navbar ul li ul.dropdown {
