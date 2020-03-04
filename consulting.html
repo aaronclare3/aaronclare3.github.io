@@ -31,7 +31,7 @@
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">Our Team</a></li>
-                            <li class="submenu"><a class="submenu-a" href="">Services</a>
+                            <li class="submenu"><a class="submenu-a" href="">Services </a><i class="fas fa-caret-down arrow-down"></i>
                                 <ul class="ul_submenu" style="padding-left: 0px;">
                                     <li><a href="accounting_bookkeeping.html">Accounting & Bookkeeping</a></li>
                                     <li><a href="business_taxation.html">Business Income Taxation</a></li>
@@ -136,9 +136,11 @@
 
     <script>
         $(document).ready(function(){
+            $(".ul_submenu").hide();
             $('ul a.submenu-a').click(function(e) {
                 e.preventDefault();
                 $(this).closest("li").find("[class^='ul_submenu']").slideToggle();
+                $('i.arrow-down').toggleClass("fa-caret-up");
               });
         })
     </script>
