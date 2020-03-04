@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About | Clare Accounting</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="jQuery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/flexboxgrid.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/2d0c359df6.js"></script>
@@ -21,7 +21,42 @@
             <div class="header-img col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <img src="./images/transparent_logo1.png" alt="Clare Accounting Group">
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mt-2">
+
+            <!-- MOBILE MENU -->
+            <div class="menu-wrap hide-on-computer">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">Our Team</a></li>
+                            <li class="submenu"><a class="submenu-a" href="">Services </a><i class="fas fa-caret-down arrow-down"></i>
+                                <ul class="ul_submenu" style="padding-left: 0px;">
+                                    <li><a href="accounting_bookkeeping.html">Accounting & Bookkeeping</a></li>
+                                    <li><a href="business_taxation.html">Business Income Taxation</a></li>
+                                    <li><a href="consulting.html">Consulting</a></li>
+                                    <li><a href="financial_statement_preparation.html">Financial Statement Preparation</a></li>
+                                    <li><a href="individual_income_tax.html">Individual Income Taxation</a></li>
+                                    <li><a href="payroll_processing.html">Payroll Services</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="client_portal.html">Client Portal</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- COMPUTER MENU -->
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mt-2 hide-on-phone">
                 <nav id="navbar">
                     <ul class="firstlist">
                         <li><a href="index.html">Home</a></li>
@@ -34,11 +69,11 @@
                                 <li><a href="consulting.html">Consulting</a></li>
                                 <li><a href="financial_statement_preparation.html">Financial Statement Preparation</a></li>
                                 <li><a href="individual_income_tax.html">Individual Income Taxation</a></li>
-                                <li><a href="payroll_processing.html">Payroll Processing</a></li>
+                                <li><a href="payroll_processing.html">Payroll Services</a></li>
                             </ul>
                         </li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li class="current"><a href="client_portal.html">Client Portal</a></li>
+                        <li><a href="client_portal.html">Client Portal</a></li>
                     </ul>
                 </nav>
             </div>
@@ -76,6 +111,17 @@
                 </div>
         </div>
     </section>
+
+    <script>
+        $(document).ready(function(){
+            $(".ul_submenu").hide();
+            $('ul a.submenu-a').click(function(e) {
+                e.preventDefault();
+                $(this).closest("li").find("[class^='ul_submenu']").slideToggle();
+                $('i.arrow-down').toggleClass("fa-caret-up");
+              });
+        })
+    </script>
 
 </body>
 </html>
