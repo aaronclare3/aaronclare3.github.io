@@ -280,14 +280,31 @@ img{
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     text-align: center;
     color: white;
     text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
+
+.covid{
+    background: red;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 50px;
+}
+
+.solid-box{
+    background: white;
+    color: black;
+    border: solid black 1px;
+    width: 400px;
+    display: inline-block;
+    padding: 10px 0px; 
+
+}
+
 .carousel-content-1{
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -347,7 +364,17 @@ img{
 #showcase{
     /* background: url('../images/bookkeeping.jpg') no-repeat center center; */
     border-bottom: 1px solid #062C87;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+}
+
+.small-header{
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+}
+.small-header p{
+    padding-top:7px;
+    color: white;
 }
 
 .carousel img{
@@ -581,12 +608,30 @@ img{
     }
 }
 
+@media(max-width: 1030px){
+    .carousel-content-1{
+        top: 40%;
+    }
+}
 
 
 
-@media(max-width: 800px){
+@media(max-width: 810px){
     #showcase h1{
         font-size: 30px;
+    }
+    .carousel-content-1 h1{
+        font-size: 28px !important;
+    }
+    .carousel-content-1 h4{
+        font-size: 20px;
+    }
+    .carousel-content-1{
+        top: 40%;
+    }
+
+    .solid-box{
+        font-size: 20px;
     }
 }
 
@@ -609,6 +654,18 @@ img{
         text-shadow: 0 1px 2px rgba(0,0,0,.6);
     }
 
+
+    .carousel-content-1 h1{
+        font-size: 26px !important;
+    }
+    .carousel-content-1 h4{
+        font-size: 15px;
+    }
+
+    .solid-box{
+        font-size: 15px;
+    }
+
     .box {
         border: 1px solid #ccc;
         box-shadow: 0 0 11px rgba(33,33,33,.2); 
@@ -621,6 +678,16 @@ img{
 
 @media(max-width: 600px){
 
+    .carousel-content-1 h1{
+        font-size: 26px !important;
+    }
+    .carousel-content-1 h4{
+        font-size: 15px;
+    }
+
+    .solid-box{
+        font-size: 15px;
+    }
     .mobile-menu {
         display: block;
     }
