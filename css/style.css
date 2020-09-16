@@ -191,7 +191,6 @@ html,body{
 
 
 
-
 img{
     width: 100%;
 }
@@ -297,9 +296,9 @@ img{
     color: black;
     border: solid black 1px;
     width: 400px;
-    display: inline-block;
     padding: 10px 0px; 
-
+    margin: 0 auto;
+    text-align: center;
 }
 
 .carousel-content-1{
@@ -657,6 +656,7 @@ img{
 
     .carousel-content-1 h1{
         font-size: 26px !important;
+        width: 300px;
     }
     .carousel-content-1 h4{
         font-size: 15px;
@@ -664,6 +664,7 @@ img{
 
     .solid-box{
         font-size: 15px;
+        width: 300px;
     }
 
     .box {
