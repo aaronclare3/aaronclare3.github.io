@@ -607,6 +607,7 @@ img{
     border: 2px solid black;
 }
 
+
 /* MEDIA QUERIES */
 @media(min-width: 601px){
     .hide-on-phone {
