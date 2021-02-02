@@ -92,13 +92,6 @@
             </div>
           </div>
         </div>
-        <div class="row m-3 hide-on-computer">
-          <button class="mobile-button btn btn-md btn-primary font-white">
-            <a style="text-decoration: none; color: white" href="contact.html"
-              >Let's Connect!</a
-            >
-          </button>
-        </div>
 
         <!-- COMPUTER MENU -->
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mt-2 hide-on-phone">
@@ -141,13 +134,6 @@
                   >Client Portal</a
                 >
               </li>
-              <button class="hide-on-phone btn btn-md btn-primary font-white">
-                <a
-                  style="text-decoration: none; color: white"
-                  href="contact.html"
-                  >Let's Connect!</a
-                >
-              </button>
             </ul>
           </nav>
         </div>
@@ -320,16 +306,8 @@
       defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs66Y4UNiWrLWKtRojg72w9GZ8I_AQlV8&callback=initMap"
     ></script>
-    <script>
-      $(document).ready(function () {
-        $(".ul_submenu").hide();
-        $("ul a.submenu-a").click(function (e) {
-          e.preventDefault();
-          $(this).closest("li").find("[class^='ul_submenu']").slideToggle();
-          $("i.arrow-down").toggleClass("fa-caret-up");
-        });
-      });
-    </script>
+    <script src="./mobilemenu&routing.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
