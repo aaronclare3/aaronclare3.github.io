@@ -348,10 +348,13 @@ img{
 
 }
 
+
 .about-team-img {
     max-width: 500px;
     border-radius: 5px;
 }
+
+
 
 .border-top-radius {
     border-top-left-radius: 10px; 
