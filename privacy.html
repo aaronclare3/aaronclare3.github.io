@@ -1,173 +1,291 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>About | Clare Accounting</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/icon_only.jpg" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/flexboxgrid.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexboxgrid.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/2d0c359df6.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header id="main-header">
-        <div class="row center-xs center-sm middle-xs middle-sm middle-md middle-lg">
-            <div class="header-img col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                <img src="./images/transparent_logo1.png" alt="Clare Accounting Group">
-            </div>
-
-            <!-- MOBILE MENU -->
-            <div class="menu-wrap hide-on-computer">
-                <input type="checkbox" class="toggler">
-                <div class="hamburger"><div></div></div>
-                <div class="menu">
-                <div>
-                    <div>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">Our Team</a></li>
-                            <li class="submenu"><a class="submenu-a" href="">Services </a><i class="fas fa-caret-down arrow-down"></i>
-                                <ul class="ul_submenu" style="padding-left: 0px;">
-                                    <li><a href="accounting_bookkeeping.html">Accounting & Bookkeeping</a></li>
-                                    <li><a href="business_taxation.html">Business Income Taxation</a></li>
-                                    <li><a href="consulting.html">Consulting</a></li>
-                                    <li><a href="financial_statement_preparation.html">Financial Statement Preparation</a></li>
-                                    <li><a href="individual_income_tax.html">Individual Income Taxation</a></li>
-                                    <li><a href="payroll_processing.html">Payroll Services</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a target="_blank" href="https://link.intuit.com/login/#/signin">Client Portal</a></li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="row m-3 hide-on-computer">
-                <button class="mobile-button btn btn-md btn-primary font-white"><a style="text-decoration: none; color: white" href="contact.html">Let's Connect!</a></button>
-            </div>
-
-
-
-
-
-            <!-- COMPUTER MENU -->
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mt-2 hide-on-phone">
-                <nav id="navbar">
-                    <ul class="firstlist">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">Our Team</a></li>
-                        <li>
-                            <a>Services <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown">
-                                <li><a href="accounting_bookkeeping.html">Accounting & Bookkeeping</a></li>
-                                <li><a href="business_taxation.html">Business Income Taxation</a></li>
-                                <li><a href="consulting.html">Consulting</a></li>
-                                <li><a href="financial_statement_preparation.html">Financial Statement Preparation</a></li>
-                                <li><a href="individual_income_tax.html">Individual Income Taxation</a></li>
-                                <li><a href="payroll_processing.html">Payroll Services</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a target="_blank" href="https://link.intuit.com/login/#/signin">Client Portal</a></li>
-                        <button class="hide-on-phone btn btn-md btn-primary font-white"><a style="text-decoration: none; color: white" href="contact.html">Let's Connect!</a></button>
-                    </ul>
-                </nav>
-            </div>
+      <div
+        class="row center-xs center-sm middle-xs middle-sm middle-md middle-lg"
+      >
+        <div class="header-img col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <img
+            src="./images/transparent_logo1.png"
+            alt="Clare Accounting Group"
+          />
         </div>
+
+        <!-- MOBILE MENU -->
+        <div class="menu-wrap hide-on-computer">
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">Our Team</a></li>
+                  <li class="submenu">
+                    <a class="submenu-a" href="">Services </a
+                    ><i class="fas fa-caret-down arrow-down"></i>
+                    <ul class="ul_submenu" style="padding-left: 0px">
+                      <li>
+                        <a href="accounting_bookkeeping.html"
+                          >Accounting & Bookkeeping</a
+                        >
+                      </li>
+                      <li>
+                        <a href="business_taxation.html"
+                          >Business Income Taxation</a
+                        >
+                      </li>
+                      <li><a href="consulting.html">Consulting</a></li>
+                      <li>
+                        <a href="financial_statement_preparation.html"
+                          >Financial Statement Preparation</a
+                        >
+                      </li>
+                      <li>
+                        <a href="individual_income_tax.html"
+                          >Individual Income Taxation</a
+                        >
+                      </li>
+                      <li>
+                        <a href="payroll_processing.html">Payroll Services</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://link.intuit.com/login/#/signin"
+                      >Client Portal</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-3 hide-on-computer">
+          <button class="mobile-button btn btn-md btn-primary font-white">
+            <a style="text-decoration: none; color: white" href="contact.html"
+              >Let's Connect!</a
+            >
+          </button>
+        </div>
+
+        <!-- COMPUTER MENU -->
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mt-2 hide-on-phone">
+          <nav id="navbar">
+            <ul class="firstlist">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Our Team</a></li>
+              <li>
+                <a>Services <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown">
+                  <li>
+                    <a href="accounting_bookkeeping.html"
+                      >Accounting & Bookkeeping</a
+                    >
+                  </li>
+                  <li>
+                    <a href="business_taxation.html"
+                      >Business Income Taxation</a
+                    >
+                  </li>
+                  <li><a href="consulting.html">Consulting</a></li>
+                  <li>
+                    <a href="financial_statement_preparation.html"
+                      >Financial Statement Preparation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="individual_income_tax.html"
+                      >Individual Income Taxation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="payroll_processing.html">Payroll Services</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a target="_blank" href="https://link.intuit.com/login/#/signin"
+                  >Client Portal</a
+                >
+              </li>
+              <button class="hide-on-phone btn btn-md btn-primary font-white">
+                <a
+                  style="text-decoration: none; color: white"
+                  href="contact.html"
+                  >Let's Connect!</a
+                >
+              </button>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <section id="page" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-box p-4">
-                        <h4>Updated: November 11th, 2019</h4>
-                        <p>i. By using or accessing this site, www.clareaccountinggroup.com, you agree to this privacy policy,
-                                disclaimer, and terms of use. Please read thoroughly.</p>
-                        <p>ii. We collect information that you provide to us when you sign up for a free consultation. Clare
-                                Accounting Group LLC does not sell or rent your information. In some cases, we may share your
-                                information in order for us to work with 3 rd parties to conduct business functions. We will not
-                                share your information to these 3 rd parties without prior approval from you. Clare Accounting
-                                Group LLC uses your information to provide better services to you by keeping your information
-                                up to date and responding to your comments or questions. We take reasonable security
-                                measures to safeguard the information you share with us.</p>
-                        <p>iii. The information contained on the Site is owned and operated by Clare Accounting
-                                Group LLC. The information on this Site is provided by Clare Accounting Group LLC for general
-                                guidance and is intended to provide users general information of interest. The information
-                                provided is not intended to replace or serve as a substitute for any accounting, tax, legal or
-                                other professional advice.</p>
-                        <p>iv. The information is provided “as is” without warranties of any kind, express or implied,
-                                including accuracy, timeliness, and completeness. We make no representation, warranty or
-                                guarantee that the Site will be free from error, omission-free, or free from viruses.</p>
-                        <p>v. All tax articles and other information on this Site are not intended to be used, and cannot be
-                                used, by any taxpayer for the purpose of avoiding accuracy-related penalties that may be
-                                imposed on the taxpayer.</p>
-                        <p>vi. In no event shall Clare Accounting Group LLC, its related partners, directors, or
-                                employees be liable for any direct or indirect damages, whatsoever, without regard to the form
-                                of any action, arising out of or in connection with the Site, any content on or accessed by use of
-                                the Site, or any copying, display, or other use hereof.</p>
-                        <p>vii. Terms of Use: Acceptance of Agreement: You agree to the terms and conditions
-                                outlined in this Agreement with respect to the Site. This agreement constitutes agreement
-                                between you and Clare Accounting Group LLC and supersedes all prior agreements with respect
-                                to the Site, the content, and the product and services provided by or through the Site.</p>
-                </div>   
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-box p-4">
+            <h4>Updated: November 11th, 2019</h4>
+            <p>
+              i. By using or accessing this site, www.clareaccountinggroup.com,
+              you agree to this privacy policy, disclaimer, and terms of use.
+              Please read thoroughly.
+            </p>
+            <p>
+              ii. We collect information that you provide to us when you sign up
+              for a free consultation. Clare Accounting Group LLC does not sell
+              or rent your information. In some cases, we may share your
+              information in order for us to work with 3 rd parties to conduct
+              business functions. We will not share your information to these 3
+              rd parties without prior approval from you. Clare Accounting Group
+              LLC uses your information to provide better services to you by
+              keeping your information up to date and responding to your
+              comments or questions. We take reasonable security measures to
+              safeguard the information you share with us.
+            </p>
+            <p>
+              iii. The information contained on the Site is owned and operated
+              by Clare Accounting Group LLC. The information on this Site is
+              provided by Clare Accounting Group LLC for general guidance and is
+              intended to provide users general information of interest. The
+              information provided is not intended to replace or serve as a
+              substitute for any accounting, tax, legal or other professional
+              advice.
+            </p>
+            <p>
+              iv. The information is provided “as is” without warranties of any
+              kind, express or implied, including accuracy, timeliness, and
+              completeness. We make no representation, warranty or guarantee
+              that the Site will be free from error, omission-free, or free from
+              viruses.
+            </p>
+            <p>
+              v. All tax articles and other information on this Site are not
+              intended to be used, and cannot be used, by any taxpayer for the
+              purpose of avoiding accuracy-related penalties that may be imposed
+              on the taxpayer.
+            </p>
+            <p>
+              vi. In no event shall Clare Accounting Group LLC, its related
+              partners, directors, or employees be liable for any direct or
+              indirect damages, whatsoever, without regard to the form of any
+              action, arising out of or in connection with the Site, any content
+              on or accessed by use of the Site, or any copying, display, or
+              other use hereof.
+            </p>
+            <p>
+              vii. Terms of Use: Acceptance of Agreement: You agree to the terms
+              and conditions outlined in this Agreement with respect to the
+              Site. This agreement constitutes agreement between you and Clare
+              Accounting Group LLC and supersedes all prior agreements with
+              respect to the Site, the content, and the product and services
+              provided by or through the Site.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="company">
-        <div class="row center-xs center-sm center-md center-lg pb-3">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <h4>Contact Us</h4>
-                <ul>
-                        <li><i class="fa fa-phone"></i> 425-497-1431</li>
-                        <li><i class="fa fa-envelope"></i> <a href="mailto:scott.clare@clareaccountinggroup.com">scott.clare@clareaccountinggroup.com</a></li>
-                        <li><i class="fa fa-map"></i><a target="_blank" href="https://www.google.com/maps/dir//7981+168th+Ave+NE+%23222,+Redmond,+WA+98052/@47.6746557,-122.1867028,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x549072b13f995d7b:0xc7be10a07b2a7e05!2m2!1d-122.1166624!2d47.674677!3e0"> 7981 168th Avenue NE Suite 222 Redmond, WA 98052</a></li>
-                </ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <h4>Our Values</h4>
-                <p>Integrity, Commitment, Simplicity, Teamwork, and Quality</p>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-bottom">
-                <a href="privacy.html">Privacy Policy</a><span> | </span>
-                <a href="">Disclaimer</a>
-                </div>
+      <div class="row center-xs center-sm center-md center-lg pb-3">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fa fa-phone"></i> 425-497-1431</li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:scott.clare@clareaccountinggroup.com"
+                >scott.clare@clareaccountinggroup.com</a
+              >
+            </li>
+            <li>
+              <i class="fa fa-map"></i
+              ><a
+                target="_blank"
+                href="https://www.google.com/maps/dir//7981+168th+Ave+NE+%23222,+Redmond,+WA+98052/@47.6746557,-122.1867028,12z/data=!4m9!4m8!1m0!1m5!1m1!1s0x549072b13f995d7b:0xc7be10a07b2a7e05!2m2!1d-122.1166624!2d47.674677!3e0"
+              >
+                7981 168th Avenue NE Suite 222 Redmond, WA 98052</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="row center-xs center-sm center-md center-lg">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 add-border">
-                <p>Copyright &copy; 2019 | Clare Accounting Group</p>
-                </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <h4>Our Values</h4>
+          <p>Integrity, Commitment, Simplicity, Teamwork, and Quality</p>
         </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-bottom">
+          <a href="privacy.html">Privacy Policy</a><span> | </span>
+          <a href="">Disclaimer</a>
+        </div>
+      </div>
+      <div class="row center-xs center-sm center-md center-lg">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 add-border">
+          <p>Copyright &copy; 2019 | Clare Accounting Group</p>
+        </div>
+      </div>
     </section>
 
-    
     <script>
-        $(document).ready(function(){
-            $(".ul_submenu").hide();
-            $('ul a.submenu-a').click(function(e) {
-                e.preventDefault();
-                $(this).closest("li").find("[class^='ul_submenu']").slideToggle();
-                $('i.arrow-down').toggleClass("fa-caret-up");
-              });
-        })
+      $(document).ready(function () {
+        $(".ul_submenu").hide();
+        $("ul a.submenu-a").click(function (e) {
+          e.preventDefault();
+          $(this).closest("li").find("[class^='ul_submenu']").slideToggle();
+          $("i.arrow-down").toggleClass("fa-caret-up");
+        });
+      });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158043947-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-158043947-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-gtag('config', 'UA-158043947-1');
-</script>
-
-
-</body>
+      gtag("config", "UA-158043947-1");
+    </script>
+  </body>
 </html>
