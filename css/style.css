@@ -217,7 +217,7 @@ img{
 .header-img img{
     max-width: 225px;
     margin: -55px 0px;
-    
+    cursor: pointer;
 }
 
 

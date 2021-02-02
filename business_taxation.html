@@ -259,16 +259,8 @@
       </div>
     </section>
 
-    <script>
-      $(document).ready(function () {
-        $(".ul_submenu").hide();
-        $("ul a.submenu-a").click(function (e) {
-          e.preventDefault();
-          $(this).closest("li").find("[class^='ul_submenu']").slideToggle();
-          $("i.arrow-down").toggleClass("fa-caret-up");
-        });
-      });
-    </script>
+    <script src="./mobilemenu&routing.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
