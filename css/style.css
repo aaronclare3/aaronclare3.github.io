@@ -290,6 +290,11 @@ img{
     padding: 10px 50px;
 }
 
+/* .covid-text {
+    width: 90%;
+    margin: 0px auto;
+} */
+
 .covid-show{
     display: none;
     cursor: pointer;
@@ -314,11 +319,12 @@ img{
 .solid-box{
     background: white;
     color: black;
-    border: solid black 1px;
+    /* border: solid black 1px; */
     width: 400px;
     padding: 10px 0px; 
     margin: 30px auto 0 auto;
     text-align: center;
+    font-weight: bold;
 }
 
 .carousel-content-1{
@@ -545,13 +551,13 @@ img{
 #page{
     padding-bottom: 40px;
     padding-top: 40px;
-    /* color: white; */
     background-color: #E8E8E8;
 }
 
-#page-contact h3{
+#page-contact {
     background-color: #E8E8E8;
-    margin: 0;
+    width: 70%;
+    margin: 0 auto;
 }
 
 
@@ -631,11 +637,19 @@ img{
 
 #map {
     height:500px;
-    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 15px;
+    border-radius: 5px;
 }
 
 
+
 /* MEDIA QUERIES */
+@media(min-width: 750px){
+    #page-contact{
+        width: 40%;
+    }
+}
+
 @media(min-width: 601px){
     .hide-on-phone {
         visibility: visible;
