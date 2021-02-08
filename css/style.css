@@ -369,8 +369,11 @@ img{
 
 .bio-img {
     border-radius: 5px;
-    margin-top: 7px;
-    border: 2px solid grey;
+    /* margin-top: 7px;
+    border: 2px solid grey; */
+    /* border-radius: 10px; */
+    /* box-shadow: 3px 3px 5px 3px #ccc; */
+    box-shadow: rgba(0, 0, 0, 0.509) 10px 10px 15px;
 
 }
 
@@ -378,6 +381,8 @@ img{
 .about-team-img {
     max-width: 500px;
     border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.509) 10px 10px 15px;
+
 }
 
 
