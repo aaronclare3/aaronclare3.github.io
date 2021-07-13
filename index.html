@@ -242,7 +242,7 @@
       </div>
     </div>
 
-    <div class="row covid center-xs center-md center-sm center-lg">
+    <div class="covid none row center-xs center-md center-sm center-lg">
       <div class="row"><h5>COVID-19</h5></div>
       <div class="row">
         As we continue to monitor reports of the impact of COVID-19, we want to
@@ -391,8 +391,8 @@
     <script>
       $(document).ready(function () {
         $(".covid-hide, .covid-show").click(() => {
-          $(".covid").slideToggle("slow");
-          $(".covid-show").slideToggle("slow");
+          $("div.covid").toggleClass("none");
+          $(".covid-show").toggle();
         });
       });
     </script>
