@@ -340,10 +340,19 @@
     <script>
       function checkCaptcha(response) {
         axios
-          .post("https://www.google.com/recaptcha/api/siteverify", {
-            secret: "6Ld3OjEhAAAAAOdGlh8YZ4Qe0KjL_3yC7YIZh6pG",
-            response: response,
-          })
+          .post(
+            "https://www.google.com/recaptcha/api/siteverify",
+            {
+              secret: "6Ld3OjEhAAAAAOdGlh8YZ4Qe0KjL_3yC7YIZh6pG",
+              response: response,
+            },
+            {
+              headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Headers": "*",
+              },
+            }
+          )
 
           .then((response) => {
             console.log(response);
