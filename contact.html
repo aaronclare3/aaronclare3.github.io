@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://kit.fontawesome.com/2d0c359df6.js"></script>
     <script src="./mobilemenu&routing.js"></script>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -297,6 +298,7 @@
         var infowindow = new google.maps.InfoWindow({
           content: contentString,
         });
+
         marker.addListener("click", function () {
           infowindow.open(map, marker);
         });
